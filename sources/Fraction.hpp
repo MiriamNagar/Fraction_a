@@ -16,8 +16,8 @@ public:
     Fraction(): numerator(0), denominator(1){}
     Fraction(int nume, int deno): numerator(nume), denominator(deno){}
     Fraction(float frac);
-    // Fraction(const Fraction &frac):numerator(frac.numerator), denominator(frac.denominator){}
-    // ~Fraction(){};
+    Fraction(const Fraction &frac):numerator(frac.numerator), denominator(frac.denominator){}
+    ~Fraction(){};
 
     
     //operators on Fraction objects
